@@ -3,7 +3,7 @@
     var sf = function($imgs) {
         $imgs.forEach(function($img) {
             var classname = $img.className ;
-            if (classname.indexOf('not') != -1) {
+            if (classname.indexOf('not') === -1) {
                 $img.addEventListener('click', function() {
                     show(this);
                 }, false);
